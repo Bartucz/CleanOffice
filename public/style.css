@@ -1,0 +1,462 @@
+
+body {
+    background-color: #e6e6e6;
+    color: #999999;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.80857;
+	font-weight: 300;
+	letter-spacing: 1.3px;
+}
+
+html, body{
+	height: 100%;
+}
+
+footer{
+    height: 50px;
+}
+img{width: 100%;}
+#logo{
+    width:150px;
+}
+#denied{
+    width: 30%;
+}#spray{
+    width: 60%;
+}
+a {
+    font-size: large !important;
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #333333;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    opacity: .8
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none;
+}
+
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.navbar-dark{
+	background: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #3a3a3a;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.navbar-dark .navbar-nav .nav-item{
+	margin: 0px 5px;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{
+	color: #ffffff;
+	background: #3a3a3a;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+	font-weight: 600;
+	color: #ffffff;
+    background: #3a3a3a;
+}
+
+.sidenav {
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+span{
+    background-color: #1f1f1f;
+}
+
+/*------------------------------------------------------------------
+    KEZDŐLAP-SECTION
+-------------------------------------------------------------------*/
+
+.kezdolap-section{
+	height: 100%;
+	position: relative;
+}
+
+.kezdolap-section, .rolunk-section{
+    width: 100%;
+	text-align: center;
+}
+.kezdolap-section::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .6;
+}
+.kezdolap-content {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.in-box{
+	background: #45a6c3;
+	display: inline-block;
+	padding: 40px;
+	position: relative;
+	border: 20px solid #21759b;
+}
+.in-box::before{
+	border: 10px solid #ffffff;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+.in-box h2{
+	color: #ffffff;
+	font-size: 38px;
+	font-weight: 500;
+}
+.in-box p{
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 200;
+}
+
+.in-box a{
+	background: #ffffff;
+	font-size: 18px;
+	padding: 10px 20px;
+	color: #333333;
+}
+.in-box a:hover{
+	color: #ffffff;
+}
+.button-out {
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+}
+.button-out::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c637e;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition-duration: 0.3s;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+.button-out:hover::before, .button-out:focus::before, .button-out:active::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.button{
+    cursor: pointer;
+	background: #ffffff;
+	font-size: 18px;
+	padding: 10px 20px;
+	color: #3a3a3a;
+	box-shadow: 0 7px 10px #e6e6e6;
+    border: none;
+}
+.button:hover{
+	color: #ffffff;
+}
+
+.al-section{
+    width: 80%;
+    margin:auto;
+}
+.cont-box{
+    height: 20%;
+	background: url(images/level.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.inner-cont-box{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    padding-top: 10%;
+    height: 100%;
+
+}
+
+.inner-cont-box h3{
+	font-weight: 600;
+	font-size: 38px;
+    color: #ffffff;
+
+}
+
+.inner-cont-box h4{
+	font-size: 24px;
+	font-weight: 200;
+	text-transform: uppercase;
+    color: #ffffff;
+}
+
+.dmtop {
+    background-color: #3C3D41;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    bottom: 5%;
+    border-radius: 3px;
+    right: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff !important;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.al-section h3 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 0 25px;
+    padding: 0;
+    text-transform: none;
+}
+
+.services-inner-box{
+	padding: 50px;
+	background: #ffffff;
+	margin-bottom: 30px;
+	border-radius: 100px 0px;
+	box-shadow: 0 7px 10px #e6e6e6;
+	text-align: center;
+}
+
+.rolunk-section ul li, .idopontLabel{
+    list-style: none;
+	background: #45a6c3;
+    padding: 10px 20px;
+	margin-bottom: 10px;
+	color: #ffffff;
+	font-weight: 200;
+    font-size: 18px;
+}
+.rolunk-section ul{
+    padding: 0 !important;
+}
+
+.box{
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease 0s;
+}
+
+.box .box-content{
+    width: 95%;
+    height: 95%;
+    background: rgba(0,0,0,0.8);
+    padding: 18% 10px 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.box:hover .box-content{ opacity: 1; }
+.box .title{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.box .post{
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    color: #45a6c3;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width:990px){
+    .box{ margin-bottom: 30px; }
+    .inner-cont-box{display: none;}
+}
+
+.kapcsolat-form {
+    border: 1px solid #ededed;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+    background-color: #f2f3f5;
+    padding: 40px 30px;
+	max-width: 786px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.kapcsolat-form .form-control {
+    background-color: #45a6c3a4;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 16px;
+    outline: 0 none;
+    padding: 10px 25px;
+    height: 55px;
+    resize: none;
+    box-shadow: none !important;
+    width: 100%;
+	border-radius: 0px;
+}
+
+.kapcsolat-form textarea {
+    color: #ffffff;
+    padding: 20px 25px !important;
+    height: 160px !important;
+}
+
+.kapcsolat-form .form-control::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.kapcsolat-form .form-control::-moz-placeholder {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.kapcsolat-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+fieldset div{
+    display: grid;
+    grid-template-columns:120px 50%;
+}
+
+label{
+    text-align: right;
+    padding-right: 5px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+}
+th{
+    font-weight: bold;
+}
+th:hover, #OK:hover, #torol:hover,#modosit:hover{
+    cursor: pointer;
+}
