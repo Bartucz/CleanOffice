@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,10 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('user.home');
 });
+
+Route::get('/order', [HomeController::class, 'order']);
+Route::get('/order/{datum}', [HomeController::class, 'foglalas']);
+
 
 Auth::routes();
 
