@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Megrendeles;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FormSend;
 
 class HomeController extends Controller
 {
@@ -48,5 +50,31 @@ class HomeController extends Controller
         $megrendeles->save();
 
         return redirect('/order');
+    }
+
+    /*Email*/
+    function sendemail()
+    {
+     return view('user.email');
+    }
+
+    function send(Request $request)
+    {
+     $this->validate($request, [
+      'nev'     =>  'required',
+      'email'  =>  'required|email',
+      'telefon'     =>  'required',
+      'uzenet' =>  'required'
+     ]);
+
+        $data = array(
+            'nev'      =>  $request->nev,
+            'telefon'     =>  $request->telefon,
+            'uzenet'   =>   $request->uzenet
+        );
+
+     Mail::to('bartucz.petra@gmail.com')->send(new FormSend($data));
+     return back()->with('success', 'Köszönjük, sikeresen kapcsolatba lépett velünk!');
+
     }
 }

@@ -43,7 +43,7 @@
                         <a class="nav-link" href="/home#csapat">{{ __('Csapat') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/home#kapcsolat">{{ __('Kapcsolat') }}</a>
+                        <a class="nav-link" href="/sendemail">{{ __('Kapcsolat') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/order">{{ __('Rendelés') }}</a>

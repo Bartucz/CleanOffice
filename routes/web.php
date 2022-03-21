@@ -26,6 +26,10 @@ Route::get('/home', function () {
 Route::get('/order', [HomeController::class, 'order']);
 Route::get('/order/{datum}', [HomeController::class, 'foglalas']);
 
+/* Kapcsolat-email */
+Route::get('/sendemail', [HomeController::class, 'sendemail']);
+Route::post('/sendemail/send', [HomeController::class, 'send']);
+
 
 Auth::routes();
 
