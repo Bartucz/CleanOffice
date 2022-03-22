@@ -45,17 +45,12 @@
                 $nowdate=false;
                 foreach ($megrendeles as $value) {
 
-                    if ($value->datumtol==date("Y-m-d H:i:s", $startdate) and $value->allapot!=="törölve") {
+                    if ($value->datumtol==date("Y-m-d H:i:s", $startdate) and $value->allapot!=="Törölve") {
                         $nowdate=True;
-                        echo "<script>console.log('Startdate: ".date('Y-m-d H:i:s', $startdate)." vizsgalo ".$value->datumtol." bool ".$nowdate."' );</script>";
-
-                    }else {
-                        echo "<script>console.log('Startdate: ".date('Y-m-d H:i:s', $startdate)." vizsgalo ".$value->datumtol." bool ".$nowdate."' );</script>";
                     }
                 }
                 if ($nowdate==False) {
-                    //echo "<script>console.log('Debug Objects: " . $value->datumtol ." kaki ".$nowdate. "' );</script>";
-                    echo '<td>'.date('Y-m-d H:i:s', $startdate) . "</td>";
+                    echo '<td class="idopont">'.date('Y-m-d H:i:s', $startdate) . "</td>";
                         $startdate = strtotime("+1 day", $startdate);
                 }else {
                     echo '<td class="foglalt">'.date('Y-m-d H:i:s', $startdate) . "</td>";
@@ -76,7 +71,7 @@
 </tbody>
       </table>
 <br>
-      <div class="text-center"><button class="button button-out" id="foglal">Foglalás</button></div>
+      <div class="text-center"><button class="button button-out" id="foglal" onclick="return confirm('Erősítse meg a foglalást!')">Foglalás</button></div>
 
 </section>
 

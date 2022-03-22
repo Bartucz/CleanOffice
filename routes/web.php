@@ -30,6 +30,16 @@ Route::get('/order/{datum}', [HomeController::class, 'foglalas']);
 Route::get('/sendemail', [HomeController::class, 'sendemail']);
 Route::post('/sendemail/send', [HomeController::class, 'send']);
 
+Route::get('/account/adatok', [HomeController::class, 'adatok']);
+Route::get('/account/adatok/passiv/{id}', [HomeController::class, 'userPassiv']);
+
+Route::get('/account/korabbi', [HomeController::class, 'megrendeles']);
+Route::get('/account/aktiv', [HomeController::class, 'megrendeles']);
+Route::get('/account/adatok/JelszoEdit/{id}', [HomeController::class, 'jelszoEdit']);
+Route::put('/account/adatok/update/{id}', [HomeController::class, 'jelszoUpdate']);
+Route::get('/account/adatok/edit/{id}', [HomeController::class, 'adatokEdit']);
+Route::put('/account/adatok/adatokUpdate/{id}', [HomeController::class, 'adatokUpdate']);
+Route::get('/account/passiv/{id}', [HomeController::class, 'megrendelesPassiv']);
 
 Auth::routes();
 

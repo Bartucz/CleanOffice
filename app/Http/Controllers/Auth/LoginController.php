@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+
 
 class LoginController extends Controller
 {
@@ -36,5 +38,21 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
         $this->redirectTo = url()->previous();
+    }
+    public function showLoginForm()
+{
+
+    if(!session()->has('url.intended'))
+    {
+        session(['url.intended' => url()->previous()]);
+    }
+    return view('auth.login');
+}
+public function attemptLogin(Request $request)
+    {
+        return $this->guard()->attempt(
+            ['email' => $request->email, 'password' => $request->password, 'aktive' => 1],
+            $request->filled('remember')
+        );
     }
 }

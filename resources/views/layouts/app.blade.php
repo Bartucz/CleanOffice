@@ -55,7 +55,7 @@
                                 @if (Auth::user()->name==="admin")
                                 <a class="nav-link" href="{{ url('/kapu') }}" >Admin felület</a>
                                 @else
-                                    <a class="nav-link" href="{{ url('/account') }}" >{{ Auth::user()->name }}</a>
+                                    <a class="nav-link" href="{{ url('/account/adatok') }}" >{{ Auth::user()->name }}</a>
                                 @endif
 
                             @else
