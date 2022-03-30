@@ -42,6 +42,7 @@ class AdminController extends Controller
         $dolgozo->allapot = $request->allapot ;
         $dolgozo->sofore = $request->sofore ;
         $dolgozo->aktive = 1;
+        $dolgozo->kep = "uploads/".$request->kep;
         $dolgozo->save();
 
         return redirect('/kapu/dolgozok');
@@ -64,6 +65,7 @@ class AdminController extends Controller
         $dolgozovalt->allapot = $dolgozo->allapot ;
         $dolgozovalt->sofore = $dolgozo->sofore ;
         $dolgozovalt->aktive = 1;
+        $dolgozovalt->kep = $dolgozo->kep;
         $dolgozovalt->save();
 
         $dolgozo->nev = $request->nev;
@@ -71,6 +73,7 @@ class AdminController extends Controller
         $dolgozo->allapot = $request->allapot ;
         $dolgozo->sofore = $request->sofore ;
         $dolgozo->aktive = 1;
+        $dolgozo->kep = $dolgozo->kep;
         $dolgozo->save();
 
         return redirect('/kapu/dolgozok');
@@ -87,6 +90,7 @@ class AdminController extends Controller
         $dolgozovalt->allapot = $dolgozo->allapot ;
         $dolgozovalt->sofore = $dolgozo->sofore ;
         $dolgozovalt->aktive = $dolgozo->aktive ;
+        $dolgozovalt->kep = $dolgozo->kep;
         $dolgozovalt->save();
 
         $dolgozo->aktive = 0;
@@ -243,11 +247,12 @@ class AdminController extends Controller
         $user->toJson();
         return view('admin.felhasznaloList',['users'=>$user]);
     }
-    public function rendelesUpdate(Request $request, $id){
-        $megrendeles = megrendeles::find($id);
-
-        $megrendeles->allapot = "alma";
-        $megrendeles->save();
+    public function rendelesUpdate(){
+        $keszmeg=Megrendeles::where('allapot', '=', "Megrendelve")->where("datumig","<",date('Y-m-d H:i:s'))->get();
+        foreach ($keszmeg as $k) {
+            $k->allapot="Teljesítve";
+            $k->save();
+        }
 
         return redirect('/kapu/rendelesek');
     }

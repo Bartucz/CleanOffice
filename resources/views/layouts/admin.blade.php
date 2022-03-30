@@ -14,7 +14,6 @@
   <link href="/style.css" rel="stylesheet">
         <script src="/ajax.js"></script>
         <script src="/megrendeles.js"></script>
-        <script src="/felhasznalo.js"></script>
     </head>
     <body>
 

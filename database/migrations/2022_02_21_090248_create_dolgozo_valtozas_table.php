@@ -20,7 +20,8 @@ return new class extends Migration
                         $table->string('telefon');
                         $table->string('allapot');
                         $table->boolean('sofore');
-                    $table->boolean('aktive');
+                        $table->boolean('aktive');
+                        $table->string('kep');
                         $table->timestamps();
         });
     }

@@ -85,7 +85,7 @@ Route::get('kapu/rendelesek', function () {
 
 })->middleware(['auth']);
 
-Route::get('/kapu/rendeles/update/{id}', [AdminController::class, 'rendelesUpdate']);
+Route::get('/kapu/rendeles/update', [AdminController::class, 'rendelesUpdate']);
 
 
 /*Felhasználók routes */

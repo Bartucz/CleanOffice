@@ -12,10 +12,6 @@ class Megrendeles{
         this.allapotValt = this.elem.children(".allapotValt");
         this.al = this.allapotValt.children("#allapot");
         this.setAdatok(this.adat);
-        this.allapotValt.on("change", () => {
-            this.kattintas();
-          });
-
     }
 
     setAdatok(adat) {
@@ -26,21 +22,10 @@ class Megrendeles{
         this.csoport.html(adat.csoport);
         this.gep.html(adat.gep);
         this.auto.html(adat.auto);
-        this.allapotValt.html('<form action="" method="POST"><div class="col-sm-10"><select class="form-control" id="allapot" name="allapot"><option >Állapot</option><option value="megrendelve">Megrendelve</option><option value="teljesitve">Teljesítve</option><option value="torolve">Törölve</option></select></form>');
         }
-        kattintas() {
-            this.kattintasTrigger();
-          }
-
-          kattintasTrigger() {
-            let esemeny = new CustomEvent("allapotValtKattintas", { detail: this.adat });
-            window.dispatchEvent(esemeny);
-          }
 }
 
 $(function () {
-
-
     const fajlnev="../api/rendelesek";
 
     let ajaxHivas = new AjaxHivas();
@@ -55,11 +40,4 @@ $(function () {
     });
     sablonElem.remove();
     }
-    $(window).on("allapotValtKattintas", (event) => {
-        console.log(event.detail.allapot);
-        console.log($("#allapot").val());
-
-        window.location = '/kapu/rendeles/update/'+event.detail.id;
-    });
-
 });

@@ -4,6 +4,7 @@
     <br>
     <h1 style="text-align: center">{{ __('Megrendelések') }}</h1>
     <hr>
+    <a href="/kapu/rendeles/update" class="button button-out">Frissítés</a>
   <table class="table table-hover" id="szulo">
     <thead>
       <tr>
@@ -24,7 +25,6 @@
       <td class="gep"></td>
       <td class="auto"></td>
       <td class="allapot"></td>
-      <td class="allapotValt"></td>
     </tr>
   </table>
   </section>

@@ -37,6 +37,12 @@
               </select>
         </div>
       </div>
+      <div class="form-group row">
+        <label for="kep" class="col-sm-2 col-form-label">Kép</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="kep" name="kep">
+        </div>
+      </div>
       <button type="submit" class="button button-out">Mentés</button>
     </form>
   </section>
