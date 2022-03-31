@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api\DolgozoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\api\MegrendelesController;
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('rendelesek', MegrendelesController::class);
+Route::apiResource('dolgozok', DolgozoController::class);

@@ -370,7 +370,7 @@ span{
     transition: all 0.8s ease 0s;
 }
 .box:hover .box-content{ opacity: 1; }
-.box .title{
+.box .nev{
     font-size: 30px;
     font-weight: 500;
     color: #fff;

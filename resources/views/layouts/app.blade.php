@@ -13,6 +13,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script src="/rendeles.js"></script>
+    <script src="/ajax.js"></script>
+  <script src="/home.js"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
 

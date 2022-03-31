@@ -56,7 +56,7 @@
             </li>
             <li>Aenean congue ex et bibendum porta.</li>
           </ul>
-          <a href="/home#kapcsolat" class="button button-out">Lépj kapcsolatba velünk!</a>
+          <a href="/sendemail" class="button button-out">Lépj kapcsolatba velünk!</a>
         </div>
         <div class="col-md-6">
           <img src="images/spray.jpg" alt="spray" class="img-fluid shadow"
@@ -185,54 +185,20 @@
             <h4>Gép 1</h4>
         </div>
         <div class="col-md-4">
-          <div>
             <img
               src="uploads/gallery_img-01.jpg"
               class="img-fluid shadow"
               alt="Image"
             />
             <h4>Gép 2</h4>
-          </div>
         </div>
         <div class="col-md-4">
-          <div>
             <img
               src="uploads/gallery_img-01.jpg"
               class="img-fluid shadow"
               alt="Image"
             />
             <h4>Gép 3</h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img
-              src="uploads/gallery_img-01.jpg"
-              class="img-fluid shadow"
-              alt="Image"
-            />
-            <h4>Gép 4</h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img
-              src="uploads/gallery_img-01.jpg"
-              class="img-fluid shadow"
-              alt="Image"
-            />
-            <h4>Gép 5</h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img
-              src="uploads/gallery_img-01.jpg"
-              class="img-fluid shadow"
-              alt="Image"
-            />
-            <h4>Gép 6</h4>
-          </div>
         </div>
       </div>
     </div>
@@ -247,33 +213,13 @@
             vehicula enim, non aliquam risus.
         </p>
       </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
+      <div class="row" id="szulo">
+        <div class="col-md-4 col-sm-6 sablon">
           <div class="box">
-            <img src="uploads/img-1.jpg" />
+            <img src="uploads/img-1.jpg" class="kep" />
             <div class="box-content">
-              <h3 class="title">Valaki</h3>
+              <h3 class="nev"></h3>
               <span class="post">Takarító</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="box">
-            <img src="uploads/img-1.jpg" />
-            <div class="box-content">
-                <h3 class="title">Valaki</h3>
-                <span class="post">Takarító</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6">
-          <div class="box">
-            <img src="uploads/img-1.jpg" />
-            <div class="box-content">
-                <h3 class="title">Valaki</h3>
-                <span class="post">Takarító</span>
             </div>
           </div>
         </div>
