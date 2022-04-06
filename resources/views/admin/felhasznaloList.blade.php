@@ -4,6 +4,7 @@
     <br>
     <h1 style="text-align: center">{{ __('Dolgozók') }}</h1>
     <hr>
+    <div class=" table-responsive">
     <table class="table table-hover">
     <thead>
       <tr>
@@ -39,5 +40,6 @@
         @endif
 @endforeach
   </table>
+    </div>
   </section>
 @endsection

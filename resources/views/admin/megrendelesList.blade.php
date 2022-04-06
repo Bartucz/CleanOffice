@@ -5,6 +5,7 @@
     <h1 style="text-align: center">{{ __('Megrendelések') }}</h1>
     <hr>
     <a href="/kapu/rendeles/update" class="button button-out">Frissítés</a>
+    <div class=" table-responsive">
   <table class="table table-hover" id="szulo">
     <thead>
       <tr>
@@ -27,5 +28,6 @@
       <td class="allapot"></td>
     </tr>
   </table>
+    </div>
   </section>
 @endsection

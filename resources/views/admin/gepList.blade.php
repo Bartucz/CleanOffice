@@ -5,6 +5,7 @@
     <h1 style="text-align: center">{{ __('Gépek') }}</h1>
     <hr>
     <div><a href="/kapu/gep/new"><button class="btn btn-sm btn-success">Új gép felvitele</button></a></div>
+    <div class=" table-responsive">
   <table class="table table-hover">
     <thead>
       <tr>
@@ -28,5 +29,6 @@
     </tr>
 @endforeach
   </table>
+    </div>
   </section>
 @endsection
