@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('rendszam');
             $table->string('allapot');
-	    $table->boolean('aktive');
+	        $table->boolean('aktive');
             $table->timestamps();
         });
     }

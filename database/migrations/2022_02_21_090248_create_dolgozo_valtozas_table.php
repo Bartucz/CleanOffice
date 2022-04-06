@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('dolgozo_valtozas', function (Blueprint $table) {
             $table->id();
             $table->integer('eredetiId');
-                        $table->string('nev');
-                        $table->string('telefon');
-                        $table->string('allapot');
-                        $table->boolean('sofore');
-                        $table->boolean('aktive');
-                        $table->string('kep');
-                        $table->timestamps();
+            $table->string('nev');
+            $table->string('telefon');
+            $table->string('allapot');
+            $table->boolean('sofore');
+            $table->boolean('aktive');
+            $table->string('kep');
+            $table->timestamps();
         });
     }
 

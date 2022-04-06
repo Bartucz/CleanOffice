@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('auto_valtozas', function (Blueprint $table) {
             $table->id();
             $table->integer('eredetiId');
-                        $table->string('rendszam');
-                        $table->string('allapot');
-                    $table->boolean('aktive');
-                        $table->timestamps();
+            $table->string('rendszam');
+            $table->string('allapot');
+            $table->boolean('aktive');
+            $table->timestamps();
         });
     }
 

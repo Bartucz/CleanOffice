@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('gep_valtozas', function (Blueprint $table) {
             $table->id();
-$table->integer('eredetiId');
+            $table->integer('eredetiId');
             $table->string('gyariszam');
             $table->string('allapot');
-	    $table->boolean('aktive');
+	        $table->boolean('aktive');
             $table->timestamps();
         });
     }

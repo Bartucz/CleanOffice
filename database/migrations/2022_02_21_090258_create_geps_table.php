@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('geps', function (Blueprint $table) {
             $table->id();
-
             $table->string('gyariszam');
             $table->string('allapot');
-	    $table->boolean('aktive');
+	        $table->boolean('aktive');
             $table->timestamps();
         });
     }
