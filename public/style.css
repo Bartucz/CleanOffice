@@ -36,6 +36,9 @@ a {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+b{
+    font-size: large;
+}
 
 h1,
 h2,

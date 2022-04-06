@@ -72,7 +72,7 @@
     @yield('tartalom')
 
     <hr>
-    <footer class="text-center">Bartucz CleanOffice</footer>
+    <footer class="text-center">CleanOffice - 2022</footer>
 </body>
 
 </html>
