@@ -391,6 +391,13 @@ span{
     .box{ margin-bottom: 30px; }
     .inner-cont-box{display: none;}
     #rendDiv{width: 100%;}
+    .kezdolap-section{
+        height: 40%;
+        position: relative;
+    }
+    #sliderImg{
+        display: none;
+    }
 }
 
 .kapcsolat-form {

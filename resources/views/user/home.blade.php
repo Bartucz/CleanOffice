@@ -5,7 +5,7 @@
     <div>
       <div class="item">
         <div>
-          <img class="img-fluid" src="uploads/slider-01.jpg" alt="" />
+          <img class="img-fluid" id="sliderImg" src="uploads/slider-01.jpg" alt="" />
         </div>
         <div class="container">
           <div class="kezdolap-content text-white">
@@ -216,7 +216,7 @@
       <div class="row" id="szulo">
         <div class="col-md-4 col-sm-6 sablon">
           <div class="box">
-            <img src="uploads/img-1.jpg" class="kep" />
+            <img src="" class="kep" />
             <div class="box-content">
               <h3 class="nev"></h3>
               <span class="post">Takarító</span>

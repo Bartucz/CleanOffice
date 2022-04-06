@@ -2,7 +2,7 @@
 @section('tartalom')
 <br>
 <section class="al-section row" >
-<div class="sidenav col-md-2">
+<div class="sidenav col-md-3">
     <a href="/account/adatok">Adatok</a>
   <a href="/account/korabbi">Korábbi rendelések</a>
   <a href="/account/aktiv">Aktív rendelések</a>
@@ -17,7 +17,7 @@
     </form>
   </div>
 </div>
-<div class="col-md-10">
+<div class="col-md-9">
     @if (request()->is('account/adatok'))
         @auth
         <section class="al-section">

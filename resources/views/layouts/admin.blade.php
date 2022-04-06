@@ -16,8 +16,6 @@
         <script src="/megrendeles.js"></script>
     </head>
     <body>
-
-
             @if(Auth::check())
                   @if ( Auth::User()->name  == "admin" )
                         <nav class="navbar navbar-dark">

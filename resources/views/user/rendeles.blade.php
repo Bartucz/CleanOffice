@@ -19,13 +19,13 @@
     <thead>
         <tr>
             <th></th>
-            <th><?php echo date("M d", strtotime("next Week Monday")) ?><br>Hétfő</th>
-            <th><?php echo date("M d", strtotime("next Week Tuesday")) ?><br>Kedd</th>
-            <th><?php echo date("M d", strtotime("next Week Wednesday")) ?><br>Szerda</th>
-            <th><?php echo date("M d", strtotime("next Week Thursday")) ?><br>Csütörtök</th>
-            <th><?php echo date("M d", strtotime("next Week Friday")) ?><br>Péntek</th>
-            <th><?php echo date("M d", strtotime("next Week Saturday")) ?><br>Szombat</th>
-            <th><?php echo date("M d", strtotime("next Week Sunday")) ?><br>Vasárnap</th>
+            <th><?php echo date("M d", strtotime("next Week Monday")) ?><br>H</th>
+            <th><?php echo date("M d", strtotime("next Week Tuesday")) ?><br>K</th>
+            <th><?php echo date("M d", strtotime("next Week Wednesday")) ?><br>Sze</th>
+            <th><?php echo date("M d", strtotime("next Week Thursday")) ?><br>Cs</th>
+            <th><?php echo date("M d", strtotime("next Week Friday")) ?><br>P</th>
+            <th><?php echo date("M d", strtotime("next Week Saturday")) ?><br>Szo</th>
+            <th><?php echo date("M d", strtotime("next Week Sunday")) ?><br>V</th>
         </tr>
     </thead>
 </table>

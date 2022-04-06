@@ -9,8 +9,6 @@ class Megrendeles{
         this.csoport = this.elem.children(".csoport");
         this.gep = this.elem.children(".gep");
         this.auto = this.elem.children(".auto");
-        this.allapotValt = this.elem.children(".allapotValt");
-        this.al = this.allapotValt.children("#allapot");
         this.setAdatok(this.adat);
     }
 

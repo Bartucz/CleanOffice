@@ -2,7 +2,7 @@ class Dolgozo{
     constructor(elem,adat){
         this.elem = elem;
         this.adat = adat;
-        this.kep = this.elem.children(".kep");
+        this.kep = this.elem.children(".box").children(".kep");
         this.nev = this.elem.children(".box").children(".box-content").children(".nev");
         this.setAdatok(this.adat);
 
