@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('tartalom')
 <section class="al-section" id="rendDiv">
-
-
 <header>
 
       <h1 class="text-center" style="flex: 1;">
@@ -13,8 +11,6 @@
     </h1>
     <div style="align-self: flex-start; flex: 0 0 1"></div>
 </header>
-
-
     <table>
     <thead>
         <tr>
@@ -72,7 +68,6 @@
       </table>
 <br>
       <div class="text-center"><button class="button button-out" id="foglal" onclick="return confirm('Erősítse meg a foglalást!')">Foglalás</button></div>
-
 </section>
 
 

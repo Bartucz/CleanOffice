@@ -40,8 +40,8 @@
 
                     <a href="/account/adatok/edit/{{ $user->id }}"><button class="btn btn-sm btn-info">Adatok módosítása</button></a>
 
-                    <a href="/account/adatok/passiv/{{ $user->id }}" onclick="return confirm('Biztos törli?')"><button class="btn btn-sm btn-danger">Fiók törlése</button></a>
-
+                    <a href="/account/adatok/passiv/{{ $user->id }}" onclick="return confirm('Biztos törli?')">
+                        <button class="btn btn-sm btn-danger">Fiók törlése</button></a>
                 @endforeach
                 </div>
             </section>
@@ -54,7 +54,7 @@
                 <hr>
                 <div class="box" id="adatok">
                     @foreach($megrendeles as $megrendeles)
-                        @if ($megrendeles->allapot!=="Megrendelve" and $megrendeles->felhasznalo===Auth::user()->id)
+                        @if ($megrendeles->allapot!=="Megrendelve")
                             <p><strong>Dátum: </strong>{{$megrendeles->datumtol}} - {{$megrendeles->datumig}}</p>
                             <p><strong>Állapot: </strong>{{$megrendeles->allapot}}</p>
                             <hr>

@@ -86,7 +86,7 @@
     <div>
       <div class="text-center">
         <h3>Szolgáltatások</h3>
-        <p>Online megrendelés esetén a következő csomagokból választhat. Egyedi igények esetén kérjük keresse ügyfélszolgálatunkat.
+        <p>Az időpont foglalás után kollegánk telefonon egyeztet Önnel a választott csomagról.
         </p>
       </div>
       <div class="row">

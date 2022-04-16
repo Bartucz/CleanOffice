@@ -23,13 +23,4 @@ class AjaxHivas {
           success: function (result) {}
         });
       }
-
-
-    deleteAjax(fajlnev, id) {
-      $.ajax({
-        url: fajlnev + "/" + id,
-        type: "DELETE",
-        success: function (result) {}
-      });
-    }
   }

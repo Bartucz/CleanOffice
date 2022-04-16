@@ -39,12 +39,13 @@ class HomeController extends Controller
     public function adatok()
     {
         $user = User::where('id', '=', auth()->id())->get();
+        $user->toJson();
 
         return view('user.account',['users'=>$user]);
     }
     public function megrendeles()
     {
-        $megrendeles =  Megrendeles::all();
+        $megrendeles =  Megrendeles::where('felhasznalo', '=', auth()->id())->get();
         $megrendeles->toJson();
 
         return view('user.account',['megrendeles'=>$megrendeles]);
