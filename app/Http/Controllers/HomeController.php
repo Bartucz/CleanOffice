@@ -164,7 +164,7 @@ class HomeController extends Controller
             'uzenet'   =>   $request->uzenet
         );
 
-     Mail::to('bartucz.petra@gmail.com')->send(new FormSend($data));
+     Mail::to('cleanoffice2022@gmail.com')->send(new FormSend($data));
      return back()->with('success', 'Köszönjük, sikeresen kapcsolatba lépett velünk!');
 
     }

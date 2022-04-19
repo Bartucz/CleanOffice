@@ -28,6 +28,6 @@ class FormSend extends Mailable
      */
     public function build()
     {
-        return $this->from('bartucz.petra@gmail.com')->subject('Felhasználó üzenet')->view('user.sendEmail')->with('data', $this->data);
+        return $this->from('cleanoffice2022@gmail.com')->subject('Felhasználó üzenet')->view('user.sendEmail')->with('data', $this->data);
     }
 }

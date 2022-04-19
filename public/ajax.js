@@ -12,6 +12,9 @@ class AjaxHivas {
           });
           myCallback(tomb);
         },
+        error: function (result) {
+          console.log(result);
+        },
       });
     }
 
@@ -21,6 +24,9 @@ class AjaxHivas {
           type: "PUt",
           data: adat,
           success: function (result) {}
+          error: function (result) {
+            console.log(result);
+          },
         });
       }
   }
