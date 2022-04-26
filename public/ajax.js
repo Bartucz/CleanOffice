@@ -18,15 +18,4 @@ class AjaxHivas {
       });
     }
 
-    putAjax(fajlnev, adat, id) {
-        $.ajax({
-          url: fajlnev + "/" + id,
-          type: "PUt",
-          data: adat,
-          success: function (result) {}
-          error: function (result) {
-            console.log(result);
-          },
-        });
-      }
   }
